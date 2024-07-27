@@ -9,15 +9,15 @@
   <body>
     <div class="main-container">
       <div class="main-heading">
-        <h1>FreeCodeCamp Survey Form</h1>
-        <p>
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <p id="description">
           Thank you for taking the time to help us improve the platform Name
         </p>
       </div>
       <div class="form-container">
-        <form action="#" method="post">
+        <form id="survey-form" action="#" method="post">
           <div class="part1">
-            <label for="name"
+            <label for="name" id="name-label"
               >Name
               <input
                 type="text"
@@ -27,7 +27,7 @@
                 required
               />
             </label>
-            <label for="email"
+            <label for="email" id="email-label"
               >Email
               <input
                 type="email"
@@ -37,12 +37,12 @@
                 required
               />
             </label>
-            <label for="age"
+            <label for="age" id="number-label"
               >Age(optional)
-              <input type="number" name="age" id="age" placeholder="Age" />
+              <input type="number" name="age" id="number" min="5" max="199" placeholder="Age" />
             </label>
             <label for="">Which option best describes your current role?</label>
-            <select name="student-role" id="selection">
+            <select name="student-role" id="dropdown">
               <option value="">--Your current role--</option>
               <option value="1">Student</option>
               <option value="2">Full time job</option>
@@ -52,18 +52,18 @@
           </div>
           <label for="">Would you recommend freeCodeCamp to a friend?</label>
           <div class="radio">
-            <input type="radio" name="radio" id="definitely" checked /><label
+            <input type="radio" name="radio" id="definitely" value="definitely" checked /><label
               for="definitely"
               >Definitely</label
             >
           </div>
           <div class="radio">
-            <input type="radio" name="radio" id="maybe" /><label for="maybe"
+            <input type="radio" name="radio" id="maybe" value="maybe" /><label for="maybe"
               >May be</label
             >
           </div>
           <div class="radio">
-            <input type="radio" name="radio" id="notsure" /><label for="notsure"
+            <input type="radio" name="radio" id="notsure" value="notsure" /><label for="notsure"
               >Not sure</label
             >
           </div>
@@ -81,61 +81,61 @@
               <p>(Check all that apply)</p></label
             >
             <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="frontend" /><label
+              <input type="checkbox" name="checkbox" id="frontend" value="1" /><label
                 for="frontend"
                 >Front-end-project</label
               >
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="fullstack" /><label
+              <input type="checkbox" name="checkbox" id="fullstack" value="2" /><label
                 for="fullstack"
                 >Full stack</label
               >
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="DCA course" /><label
+              <input type="checkbox" name="checkbox" id="DCA course" value="3" /><label
                 for="DCA course"
                 >DCA course</label
               >
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="backend" /><label
+              <input type="checkbox" name="checkbox" id="backend" value="4" /><label
                 for="backend"
                 >Backend-end-project</label
               >
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="Challanges" /><label
+              <input type="checkbox" name="checkbox" id="Challanges" value="5" /><label
                 for="Challanges"
                 >Challanges</label
               >
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="Community" /><label
+              <input type="checkbox" name="checkbox" id="Community" value="6" /><label
                 for="Community"
                 >Community</label
               >
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="courses" /><label
+              <input type="checkbox" name="checkbox" id="courses" value="7" /><label
                 for="courses"
                 >Additional Corses</label
               >
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="videos" /><label
+              <input type="checkbox" name="checkbox" id="videos" value="8" /><label
                 for="videos"
                 >Videos</label
               >
             </div>
             <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="Forums" /><label
+              <input type="checkbox" name="checkbox" id="Forums" value="9" /><label
                 for="Forums"
                 >Forums</label
               >
             </div>
             <div class="checkbox last">
-              <input type="checkbox" name="checkbox" id="Interface" /><label
+              <input type="checkbox" name="checkbox" id="Interface" value="10" /><label
                 for="Interface"
                 >Interface</label
               >
@@ -147,7 +147,7 @@
             id="feedback"
             placeholder="Enter your comments here..."
           ></textarea>
-          <button type="submit">Submit</button>
+          <button type="submit" id="submit">Submit</button>
         </form>
       </div>
     </div>
