@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg)no-repeat;
+    background-size: cover;
+    position: fixed;
+    font-family: sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 139, 0.521);
+    backdrop-filter: blur(5px);
+    color: white;
+    overflow-y:scroll;
+}
+.main-heading{
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+.main-heading h1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ p{
+    font-size: 18px;
+    font-style: italic;
+}
+.form-container{
+    max-width: 700px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 40px 40px;
+}
+.main-container .form-container label{
+    font-size: 20px;
+}
+
+.main-container .form-container .part1 input, select{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.main-container .form-container .radio{
+    margin: 10px 0;
+}
+#notsure{
+    margin-bottom: 30px;
+}
+.main-container .form-container input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.main-container .form-container .part2 p{
+    display: inline;
+    font-size: 16px;
+}
+.main-container .form-container .part2 .checkbox{
+    margin: 10px 0;
+}
+.main-container .form-container .part2 .checkbox input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right:20px ;
+}
+.main-container .form-container textarea{
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+}
+.main-container .form-container .last{
+    margin-bottom: 50px !important;
+}
+textarea::placeholder{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.main-container .form-container button{
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    background-color:rgba(0, 128, 0, 0.603);
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+.main-container .form-container button:hover{
+    background-color: transparent;
+    border: 2px solid green;
+}
