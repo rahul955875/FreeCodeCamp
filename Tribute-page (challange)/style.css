@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Condensed&family=Sevillana&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+:root{
+    --black:rgba(0, 0, 0, 0.856);
+    --f1-ubuntu:"Ubuntu Sans", sans-serif;
+}
+
+.main{
+    width: 100vw;
+    height:max-content;
+    font-family: var(--f1-ubuntu);
+    /* background-color: red; */
+}
+.header{
+    width: 100%;
+    background-color: #f2f5f7;
+    padding: 30px 0;
+}
+.header h1{
+    font-size: 7rem;
+    color: var(--black);
+    text-align: center;
+    letter-spacing:1px;
+}
+.header p{
+    font-size: 2rem;
+    text-align: center;
+    line-height:40px;
+}
+.middle{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+.middle .img-div{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.middle .img-div img{
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale();
+    transition: 3s ease;
+}
