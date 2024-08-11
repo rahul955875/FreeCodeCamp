@@ -53,12 +53,12 @@ body{
     animation: img-mover;
     animation-timeline: view();
 }
-.middle .img-div img{
+/* .middle .img-div img{
     object-position:top;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 @keyframes img-mover {
     0%{
         filter: grayscale();
