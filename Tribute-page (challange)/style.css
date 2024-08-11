@@ -4,19 +4,20 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 :root{
     --black:rgba(0, 0, 0, 0.856);
     --f1-ubuntu:"Ubuntu Sans", sans-serif;
 }
-
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
 .main{
     width: 100vw;
-    height:max-content;
     font-family: var(--f1-ubuntu);
-    /* background-color: red; */
 }
 .header{
     width: 100%;
@@ -35,21 +36,101 @@
     text-align: center;
     line-height:40px;
 }
+
 .middle{
-    width: 100%;
+    width:99%;
+    border: 3rem solid #f2f5f7;
 }
 .middle .img-div{
-    width: 80%;
+    max-width: 70%;
     height:90vh;
-    margin: 0 auto;
+    margin: 100px auto;
     overflow: hidden;
     border-radius: 20px;
+    background: url(https://softwarecrafters.io/_next/image?url=https%3A%2F%2Fswcrafters.fra1.cdn.digitaloceanspaces.com%2FBlog%2Fsoftware.crafters_a_brendan_eich_semi_ball_hacker_with_glasses__68f8b048-9092-48d1-b1c9-7fad1cbaed7f.png&w=1920&q=75);
+    background-position:top;
+    background-size: cover;
+    animation: img-mover;
+    animation-timeline: view();
 }
 .middle .img-div img{
-    /* object-position:bottom; */
+    object-position:top;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale();
-    transition: 3s ease;
+}
+@keyframes img-mover {
+    0%{
+        filter: grayscale();
+        background-position:top;
+        transform: scale(1);
+    }
+    50%{
+        filter: grayscale();
+        background-position: bottom;
+        transform: scale(1.2);
+    }
+    100%{
+        background-position: bottom;
+        transform: scale(1);
+    }
+}
+.middle p{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 2rem;
+}
+.information article{
+    width: 100%;
+    height:fit-content;
+    background-color: #f2f5f7;
+    padding: 50px 20px;
+}
+.information article h3{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.information article ul li{
+    display: flex;
+    gap: 1rem;
+    font-size: 2.5rem;
+    word-spacing: 2px;
+    line-height: 2.5rem;
+    width: 40%;
+    margin: 4rem auto;
+    animation: text;
+    animation-timeline: view();
+}
+@keyframes text {
+    
+  60%{
+    font-weight: normal;
+    }
+    90%{
+        font-weight: bold;
+    }
+    100%{
+        font-weight: normal;
+    }
+    
+}
+article li .person{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+    text-align: end;
+    line-height:4rem ;
+    border-bottom: 1px solid grey;
+    padding-bottom: 2rem;
+    animation: text;
+    animation-timeline: view(50%);
+}
+article .wiki{
+    color: var(--black);
+    font-size: 1.8rem !important;  
+}
+.wiki a{
+    /* text-decoration: none; */
+    font-size: 1.8rem;
 }
