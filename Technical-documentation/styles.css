@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --black:rgba(0, 0, 0, 0.7);
+}
 body{
     width: 100vw;
     height:100vh;
@@ -18,7 +21,7 @@ main{
 }
 a{
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
+    color: var(--black);
 }
 .left{
     width: 20%;
@@ -38,10 +41,26 @@ a{
 }
 .left p{
     border-bottom: 1px solid gray;
-    padding:15px 20px;
+    padding:15px 25px;
     
 }
 .right{
     width: 80%;
     overflow-y: scroll;
+    padding: 50px 40px;
+}
+.right .main-section h1{
+    font-size:30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.right .main-section p,ul li{
+    line-height: 20px;
+    color:var(--black);
+    margin-bottom: 20px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.right .main-section ul li{
+    margin-left: 80px;
 }
