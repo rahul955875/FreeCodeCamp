@@ -44,6 +44,13 @@ a{
     padding:15px 25px;
     
 }
+.left p:hover{
+    background-color: rgba(0, 0, 0, 0.74);
+}
+.left p:hover a{
+     color: white;
+
+}
 .right{
     width: 80%;
     overflow-y: scroll;
@@ -63,4 +70,13 @@ a{
 }
 .right .main-section ul li{
     margin-left: 80px;
+}
+.main-section .code{
+    width: 80%;
+    margin-left: 30px !important;
+    padding: 20px 30px;
+    background-color: #f2f5f7;
+}
+.code code{
+    line-height: 30px;
 }
