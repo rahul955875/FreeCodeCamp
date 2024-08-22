@@ -56,7 +56,7 @@ a{
     overflow-y: scroll;
     padding: 50px 40px;
 }
-.right .main-section h1{
+.right .main-section header{
     font-size:30px;
     font-weight: 500;
     margin-bottom: 20px;
