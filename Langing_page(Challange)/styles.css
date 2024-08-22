@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black:rgba(0, 0, 0, 0.9);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo-left img{
+    width: 300px;
+}
+header nav{
+    display: flex;
+
+}
+.nav-link a{
+    color:var(--black);
+    text-decoration: none;
+    padding: 10px 15px;
+}
