@@ -8,13 +8,12 @@
 }
 body{
     width: 100vw;
-    height:100vh;
     overflow: hidden;
     
 }
 main{
     width: 100%;
-    height: 100%;
+    height:100vh;
     display: flex;
     font-family: sans-serif;
     
@@ -79,4 +78,50 @@ a{
 }
 .code code{
     line-height: 30px;
+}
+/* =============================media query==============\ */
+
+@media (max-width:576px) {
+
+    .left{
+        width: 30%;
+    }
+    .left h1{
+        font-size:9px;
+        padding: 10px 5px;
+        
+    }
+    .left p{
+        padding:5px;
+        
+    }
+    .left a{
+        font-size: 6px;
+    }
+    
+    .right{
+        width: 70%;
+        padding: 20px 10px;
+    }
+    .right .main-section header{
+        font-size:10px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .right .main-section p,ul li{
+        line-height: 12px;
+        margin-bottom: 10px;
+        font-size: 8px;
+        margin-left: 10px;
+    }
+    .right .main-section ul li{
+        margin-left: 20px;
+    }
+    .main-section .code{
+        margin-left: 20px !important;
+        padding: 10px 20px;
+    }
+    .code code{
+        line-height: 10px;
+    }   
 }
