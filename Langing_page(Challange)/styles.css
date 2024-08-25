@@ -71,18 +71,65 @@ header nav{
 }
 .features #video{
     padding: 20px 30px;
+    margin-left: 50px;
 }
 .containers{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    place-content: center;    
-    padding: 30px 200px;
+    gap: 20px;
+    width: 65vw;    
+    margin: 40px auto;
 }
 .box{
     border: 1px solid;
     text-align: center;
-    padding: 20px 10px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+.box h2{
+    background-color: #ddd;
+    font-size: 18px;
+    padding: 15px;
+}
+.box h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.box p, .para{
+    font-size: 14px;
+    color:var(--black);
+    line-height: 25px;
+}
+.box button{
+    font-size: 16px;
+    padding: 10px 20px;
+    color: var(--black);
+    background-color: gold;
+    text-transform: uppercase;
+    border: none;
+    
+}
+footer{
+    width: 65vw;
+    background-color: #ddd;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+footer ul{
+    display: flex;
+    list-style:none;
     gap: 30px;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+footer .para{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
 }
