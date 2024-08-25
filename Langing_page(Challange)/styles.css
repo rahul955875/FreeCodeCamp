@@ -11,10 +11,13 @@ body{
     background-color: #eee;
 }
 header{
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 5px 40px;
+    position: fixed;
+    background-color: #eee;
 }
 header .logo-left img{
     width: 300px;
@@ -31,6 +34,7 @@ header nav{
     padding: 10px 15px;
 }
 .form-sec{
+    padding: 68px 0;
     text-align: center;
 }
 .form-sec h1{
@@ -64,4 +68,21 @@ header nav{
 .features p{
     line-height: 20px;
     margin-bottom: 60px;
+}
+.features #video{
+    padding: 20px 30px;
+}
+.containers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-content: center;    
+    padding: 30px 200px;
+}
+.box{
+    border: 1px solid;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
