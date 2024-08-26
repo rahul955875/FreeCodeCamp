@@ -7,7 +7,7 @@
     <title>Product Landing page</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="logo-left">
         <img
           id="header-img"
@@ -15,25 +15,25 @@
           alt="original trombones logo"
         />
       </div>
-      <nav>
-        <div class="nav-link"><a href="">Features</a></div>
-        <div class="nav-link"><a href="">How it Works</a></div>
-        <div class="nav-link"><a href="">Pricing</a></div>
+      <nav id="nav-bar">
+        <div><a class="nav-link"  href="#features">Features</a></div>
+        <div><a class="nav-link" href="#video">How it Works</a></div>
+        <div><a class="nav-link"  href="#pricing">Pricing</a></div>
       </nav>
     </header>
     <section class="form-sec">
       <h1>Handcrafted, home-made masterpieces</h1>
-      <form action="">
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
         <input
-          type="search"
-          name="search"
-          id="search"
+          type="email"
+          name="email"
+          id="email"
           placeholder="Enter your email address"
         />
-        <button>GET STARTED</button>
+      <input type="submit" id="submit" value="GET STARTED">
       </form>
     </section>
-    <section class="features-sec">
+    <section class="features-sec" id="features">
       <div class="features">
         <h2>Premium Materials</h2>
         <p>
@@ -48,10 +48,12 @@
         <p>
             For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
         </p>
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+        <div class="frame">
+        <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+      </div>
       </div>
     </section>
-    <section class="containers">
+    <section class="containers" id="pricing">
       <div class="box">
         <h2>Tenor Trombone</h2>
         <h3>$600
