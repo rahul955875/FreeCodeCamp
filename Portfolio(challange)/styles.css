@@ -11,10 +11,15 @@
     --primary-black:rgba(0, 0, 0, 0.85);
     --primary-gradient:linear-gradient(black,blue);
 }
+html,body{
+    width: 100vw;
+    overflow-x: hidden;
+}
 .nav-sec #navbar{
     position: fixed;
     z-index: 100;
     width: 100%;
+    top: 0;
     background-color:var(--nav-red);
 }
 #navbar ul{
@@ -176,5 +181,77 @@ footer .upside{
 }
 /* ==================================media query============ */
 @media (max-width:576px) {
-    
+
+#navbar ul{
+    padding:20px 5px;
+}
+#navbar a{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.welcome-section h1{
+    font-size: 30px;
+}
+.welcome-section h2{
+    font-size:15px;
+}
+.project-sec{
+    padding: 50px 10px;
+}
+.project-sec h2{
+ font-size: 18px;
+ padding-bottom: 0px;
+ text-underline-offset: 8px;
+}
+.project-sec .grid-sec{
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding:30px 0;
+}
+
+.grid-sec img{
+    height:calc(100% - 30px);
+}
+
+.grid-sec p{
+    font-size: 10px;
+    padding: 10px;
+}
+.grid-sec .sign{
+    padding: 10px;
+}
+
+.showall{
+    font-size: 12px;
+}
+footer{
+    grid-template-rows:90% 10%;
+    padding:20px 0;
+    /* place-content: center; */
+}
+
+.upside h2{
+    font-size: 30px;
+}
+.upside p{
+    font-size: 10px;
+    padding: 5px 0;
+}
+.upside .links{
+    padding: 10px;
+}
+.upside .links a{
+    font-size: 12px;
+    padding:10px 7px;
+}
+
+.downside{
+    font-size: 8px;
+    border-top: 4px solid var(--nav-red);
+    padding: 20px;
+}
+.downside p{
+    padding: 5px;
+}
 }
